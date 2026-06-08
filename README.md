@@ -40,19 +40,6 @@ Traditional residential communication patterns are heavily fragmented across dis
 
 ---
 
-## 🚀 Architectural Design Framework
-
-The platform utilizes a structured client-server architecture model to isolate display logic from data processing:
-
-```text
-  [ Client UI Browser View ] <--- (Bidirectional WebSockets) ---> [ Node.js Express Server ]
-              |                                                            |
-     (Standard REST API)                                          (Mongoose ODM Driver)
-              |                                                            |
-              v                                                            v
-      [/api/messages/:channel]                                    [ MongoDB Engine ]
-
-
 
 ##OUTPUT:
 

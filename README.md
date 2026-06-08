@@ -40,6 +40,32 @@ Traditional residential communication patterns are heavily fragmented across dis
 
 ---
 
+Tech Stack Summary: NeighbourSphere
+Architecture
+NeighbourSphere uses a full-stack, event-driven client-server architecture with real-time data persistence.
+
+Core Technologies
+1. Frontend (UI Layer)
+HTML5 & CSS3: Powers the structural layout and modern, responsive glassmorphic design system (supporting smooth dark/light mode switching).
+
+Vanilla JavaScript (ES6+): Handles client-side application logic, DOM interactions, and immediate state updates without heavy framework overhead.
+
+Fetch API: Executes asynchronous HTTP requests to synchronize historical message feeds during navigation.
+
+2. Backend & Communication
+Node.js: Core JavaScript runtime engine running non-blocking, asynchronous I/O event loops.
+
+Express.js: Light web framework managing asset streaming, CORS configurations, and REST API endpoints (/api/messages/:channel).
+
+Socket.io: Handles real-time, bidirectional communication over WebSockets for instant message broadcasting, dynamic typing indicators, and live active-user tracking.
+
+3. Database Layer
+MongoDB: NoSQL document database storing message feeds, timestamps, and metadata payloads as JSON-like documents.
+
+Mongoose (ODM): Structural mapping driver enforcing backend schemas, data validation rules, and optimization indexing.
+
+Development Environment
+VS Code: Primary IDE for writing code, handling dependencies (npm), and orchestrating the local application server terminal workspace.
 
 ##OUTPUT:
 
